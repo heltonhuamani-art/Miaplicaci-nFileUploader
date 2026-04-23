@@ -10,9 +10,9 @@ if archivo is not None:
 
     st.write("Su archivo ha sido cargado")
 
-    if archivo.name.endswith(.csv):
+    if archivo.name.endswith(".csv"):
         datos = pd.read_csv(archivo)
-    elif archivo.name.endswith(.xlsx):
+    elif archivo.name.endswith(".xlsx"):
         datos = pd.read_excel(archivo)
 
 else:
