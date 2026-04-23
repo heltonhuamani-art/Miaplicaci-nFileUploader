@@ -14,6 +14,7 @@ if archivo is not None:
         datos = pd.read_csv(archivo)
     elif archivo.name.endswith(".xlsx"):
         datos = pd.read_excel(archivo)
-
+        
+st.write(datos)
 else:
      st.write("Cargue el archivo ")
