@@ -1,5 +1,4 @@
 import streamlit as st
-
 import pandas as pd
 
 st.title("Manejo de Dataframes")
@@ -9,14 +8,12 @@ archivo = st.sidebar.file_uploader("Seleccione su archivo")
 
 if archivo is not None:
 
- st.write("Su archivo ha sido cargado")
+    st.write("Su archivo ha sido cargado")
 
-    if archivo.name.endswith(".csv"):
+    if archivo.name.endswith(.csv):
         datos = pd.read_csv(archivo)
-    elif archivo.name.endswith(".xlsx"):
+    elif archivo.name.endswith(.xlsx):
         datos = pd.read_excel(archivo)
 
 else:
-  
-
-    st.write("Cargue el archivo ")
+     st.write("Cargue el archivo ")
